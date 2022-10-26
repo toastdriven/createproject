@@ -1,0 +1,27 @@
+[metadata]
+name = {PACKAGE_NAME}
+version = {PACKAGE_VERSION}
+author = {FULL_NAME}
+author_email = {EMAIL}
+description = {DESCRIPTION}
+long_description = file: README.md
+long_description_content_type = text/markdown
+url = https://github.com/{GH_USERNAME}/{PACKAGE_NAME}
+project_urls =
+    Bug Tracker = https://github.com/{GH_USERNAME}/{PACKAGE_NAME}/issues
+classifiers =
+    Programming Language :: Python :: 3
+    License :: OSI Approved :: BSD-3-Clause
+    Operating System :: OS Independent
+
+[options]
+package_dir =
+    = src
+packages = find:
+python_requires = >=3.6
+
+[options.packages.find]
+where = src
+
+[wheel]
+universal = 1
